@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Eventos</title>
+
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		<script type="text/javascript">
+			/* EVENTOS EM JAVASCRIPT
+			window.onload = clicarJS;
+
+			function clicarJS() {
+				document.getElementById('div1').onclick = function() {
+					alert('clicou');
+				}
+			}
+			*/ 
+
+			$(document).ready( function() { 
+
+				//click
+				//dblclick
+				//mousedown
+				//mouseover
+				//etc
+
+				$("#div1").click( function() {
+					alert('Evento click');
+				});
+
+				//keydown
+				//keypress
+				//keyup
+
+				$("#campo1").keydown( function() {
+					alert('Uma tecla do teclado foi pressionada');
+				});
+
+				//focus
+				//blur
+				//change
+
+				$("#campo2").change( function() {
+					alert('Campo 2 foi alterado');
+				});
+
+			}); 
+		</script>
+	</head>
+
+	<body>
+		
+		<div id="div1" style="height: 150px; width: 150px; background: #CCC;"></div>
+		<br />
+		<input id="campo1" type="text" />
+		<br />
+		<br />
+		<select id="campo2">
+			<option value="1">Opção 1</option>
+			<option value="2">Opção 2</option>
+		</select>
+		
+	</body>
+</html>

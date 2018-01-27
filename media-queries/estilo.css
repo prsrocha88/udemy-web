@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px) {
+	body {
+		background: red;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		background: blue;
+	}
+}
+
+.item {
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	overflow: auto; /* quando o conteudo não cabe dentro de uma div, por exemplo, 
+					podemos definir como lidar com esse contudo com o overflow */
+}
